@@ -1,0 +1,51 @@
+<!-- Dodgewater -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waterdodger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+      <div id="mainMenu" class="screen">
+          <h1 id="gameTitle">Waterdodger</h1>
+          <h1 id="instructions">Move left (A) or right (D) to avoid 
+                    <br>water droplets from hitting you!
+                    <br>You can pause the game (W) or 
+                    <br>or exit (Esc) whenver necessary.
+                    <br>Keep track of the timer to see how long
+                    <br>you have lasted. </h1>
+          <button id="startGame">Start Game</button>
+          <div class="cat">
+            <div class="ear ear-left"></div>
+            <div class="ear ear-right"></div>
+            <div class="face">
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="nose"></div>
+            </div>
+        </div>
+      </div>
+      <div id="gameScreen" class="screen" style="display: none;">
+          <div id="topControls">
+              <button id="exitGame">Exit Game</button>
+              <button id="pauseGame">Pause Game</button>
+              <div id="timer">Time: 0s</div>
+          </div>
+          <div id="player" class="cat">
+              <div class="ear ear-left"></div>
+              <div class="ear ear-right"></div>
+              <div class="face">
+                  <div class="eye eye-left"></div>
+                  <div class="eye eye-right"></div>
+                  <div class="nose"></div>
+              </div>
+          </div>
+        </div>
+        <div id="waterDropsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
